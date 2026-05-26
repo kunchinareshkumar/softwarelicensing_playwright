@@ -1,0 +1,109 @@
+{
+  "users": {
+    "admin": {
+      "mobile": "9876543210",
+      "password": "Admin@123",
+      "role": "admin",
+      "name": "Admin User",
+      "email": "admin@licenseapp.com"
+    },
+    "manager": {
+      "mobile": "9123456789",
+      "password": "Manager@456",
+      "role": "manager",
+      "name": "License Manager",
+      "email": "manager@licenseapp.com"
+    },
+    "viewer": {
+      "mobile": "9001122334",
+      "password": "Viewer@789",
+      "role": "viewer",
+      "name": "Viewer User",
+      "email": "viewer@licenseapp.com"
+    },
+    "invalid": {
+      "mobile": "0000000000",
+      "password": "WrongPass@000",
+      "role": "none"
+    }
+  },
+  "licenses": {
+    "newLicense": {
+      "productName": "Enterprise Suite Pro",
+      "licenseKey": "ENT-2024-ABCD-EFGH-IJKL",
+      "licenseType": "Annual",
+      "seats": "50",
+      "expiryDate": "2025-12-31",
+      "assignedTo": "Tech Corp Ltd",
+      "description": "Enterprise license for full suite access",
+      "status": "Active"
+    },
+    "editLicense": {
+      "productName": "Developer Tools Basic",
+      "licenseKey": "DEV-2024-MNOP-QRST-UVWX",
+      "licenseType": "Monthly",
+      "seats": "10",
+      "expiryDate": "2025-06-30",
+      "assignedTo": "StartUp Inc",
+      "description": "Basic developer tools license",
+      "status": "Active",
+      "updatedSeats": "25",
+      "updatedLicenseType": "Annual"
+    },
+    "renewLicense": {
+      "licenseKey": "REN-2024-YZAB-CDEF-GHIJ",
+      "newExpiryDate": "2026-12-31",
+      "renewalNotes": "Renewed for another year - auto-renewal enabled"
+    },
+    "bulkLicenses": [
+      {
+        "productName": "Office Suite Standard",
+        "licenseKey": "OFF-2024-1111-2222-3333",
+        "seats": "20",
+        "expiryDate": "2025-09-30"
+      },
+      {
+        "productName": "Security Scanner Pro",
+        "licenseKey": "SEC-2024-4444-5555-6666",
+        "seats": "5",
+        "expiryDate": "2025-08-31"
+      },
+      {
+        "productName": "Cloud Backup Plus",
+        "licenseKey": "CLO-2024-7777-8888-9999",
+        "seats": "100",
+        "expiryDate": "2025-11-30"
+      }
+    ]
+  },
+  "dashboard": {
+    "expectedWidgets": [
+      "Total Licenses",
+      "Active Licenses",
+      "Expiring Soon",
+      "Expired Licenses"
+    ],
+    "expectedMenuItems": [
+      "Dashboard",
+      "Manage Licenses",
+      "Users",
+      "Reports",
+      "Settings"
+    ]
+  },
+  "search": {
+    "validSearchTerm": "Enterprise",
+    "invalidSearchTerm": "XXXXNOTFOUND9999",
+    "filterStatus": "Active",
+    "filterType": "Annual"
+  },
+  "validation": {
+    "emptyMobile": "",
+    "emptyPassword": "",
+    "shortMobile": "12345",
+    "invalidMobileFormat": "abcdefghij",
+    "shortPassword": "Ab1",
+    "mobileMaxLength": 10,
+    "passwordMinLength": 8
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "playwright-license-automation",
+  "version": "1.0.0",
+  "description": "End-to-end Playwright automation for Software Licensing Web Application",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:ui": "npx playwright test --ui",
+    "test:login": "npx playwright test tests/login.spec.js",
+    "test:dashboard": "npx playwright test tests/dashboard.spec.js",
+    "test:licenses": "npx playwright test tests/manageLicenses.spec.js",
+    "test:e2e": "npx playwright test tests/e2e.spec.js",
+    "report": "npx playwright show-report",
+    "codegen": "npx playwright codegen"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "dotenv": "^16.6.1"
+  }
+}
