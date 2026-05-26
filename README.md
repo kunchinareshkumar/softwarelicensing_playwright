@@ -6,7 +6,7 @@ Software licesing web application - playwright Javascript automation
 
 ### Project structure at a glance
 
-```
+```s
 playwright-license-automation/
 ├── tests/
 │   ├── login.spec.js          → 20 test cases (positive, negative, security, UI)
@@ -42,4 +42,3 @@ npx playwright show-report  # Open HTML report
 - **Resilient locators** — each locator has 2–3 fallback selectors (data-testid → semantic HTML → text)
 - **Dynamic test data** — `generateLicenseKey()` and `getFutureDate()` prevent conflicts between runs
 - **Smart skips** — optional UI elements use `test.skip()` instead of hard failures
-- **CI-ready** — GitHub Actions YAML is included in the README for immediate use
